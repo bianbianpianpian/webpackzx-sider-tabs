@@ -1,0 +1,239 @@
+// $fontStack:    Helvetica, sans-serif;
+$fontStack:    Microsoft YaHei,Helvetica, STHeiti STXihei, Microsoft JhengHei, Arial;
+$primaryColor: #333;
+$ten : 10;
+
+* {
+	box-sizing: border-box;
+}
+html, body {
+	margin: 0;
+	min-height: 100%;
+	-ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+	font-family: $fontStack;
+  	color: $primaryColor;
+  	background: #f0f1f2;
+}
+@for $i from 0 through 200 { 
+  .ml#{$i} { margin-left: 0px + $i !important; }
+  .mr#{$i} { margin-right: 0px + $i !important; }
+  .mt#{$i} { margin-top: 0px + $i !important; }
+  .mb#{$i} { margin-bottom: 0px + $i !important; }
+  .f#{$i} { font-size:  0px + $i !important; }
+}
+.bbsolid {
+	border-bottom: 2px dashed #ccc;
+}
+.bbdashed {
+	border-bottom: 1px dashed #ccc;
+}
+.btdashed {
+	border-top: 1px dashed #ccc;
+}
+.min-height60 {
+	min-height: 60px;
+}
+.text-center {
+	text-align: center;
+}
+.overflow {
+	overflow: hidden;
+}
+.pull-right {
+	float: right;
+}
+.clear-both {
+	clear: both;
+}
+.subtitle {
+	color: #80848f;
+	line-height: 20px;
+}
+@import 'theader.scss';
+@import 'tsider.scss';
+.nav-tabs>li>a.v-active {
+	background-color: #fff;
+	border-bottom-color: #fff !important;
+	border: 1px solid #ddd;
+	color: $primaryColor;
+}
+.card {
+	overflow: hidden;
+	// margin: 15px;
+	margin-bottom: 5px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-top: 0;
+	// border-bottom-left-radius: 4px;
+	// border-bottom-right-radius: 4px;
+	padding: 15px;
+	// border-radius: 10px;
+}
+#chart {
+	// text-align: center;
+	form.form-inline {
+		padding: 30px 0;
+	    margin: 0 -15px 30px;
+	    border-bottom: 1px dashed #ddd;
+		.form-group {
+			margin-left: 30px;
+			label {
+				margin-right: 10px;
+			}
+		}
+	}
+}
+.v-tag {
+	.v-active {
+		.ivu-menu-item{
+			color: #2d8cf0;
+    		border-bottom: 2px solid #2d8cf0;
+		}
+	}
+}
+.ivu-tabs {
+	overflow: visible;
+}
+.ivu-select-dropdown {
+	max-height: 240px;
+}
+.ivu-form-inline .ivu-form-item {
+    width: 100%;
+}
+.form-inline {
+	display: inline-block;
+	.ivu-form-item {
+		margin-bottom: 0 !important;
+    	vertical-align: baseline !important;
+	}
+}
+.input-search {
+	display: inline-table;
+	width: 300px;
+}
+.vertical-center-modal {
+	ul {
+		>li {
+			overflow: hidden;
+			> span {
+				display: block;
+				width: 40px;
+				float: left;
+				padding-top: 10px;
+			}
+			>div {
+				margin-left: 50px;
+				.ivu-table-wrapper {
+					top: -10px;
+				}
+			}
+		}
+	}
+}
+.ivu-cascader-dropdown {
+	ul li span {
+		display: inline;
+		float: none;
+	}
+}
+
+.no-auth {
+	font-size: 16px;
+	text-align: center;
+	margin-top: 50px;
+}
+.min-form .ivu-form-item {
+	margin-bottom: 15px;
+}
+.min-modal {
+	.ivu-modal-body {
+		max-height: 800px;
+    	// overflow-y: auto;
+	}
+	.ivu-form-item {
+		margin-bottom: 5px;
+	}
+}
+.ivu-table-overflowX {
+    overflow-x: scroll;
+}
+.error, .red, .isSelected {
+	color: #ed3f14;
+}
+.displaynone {
+	display: none !important;
+}
+.c-tip {
+	margin-top: 20px;
+	div {
+		font-size: 16px;
+		font-weight: bold;
+	}
+	ul {
+		margin-top: 10px;
+		margin-left: 20px;
+		li {
+			line-height: 30px;
+		}
+	}
+}
+
+textarea.ivu-input {
+	font-size: 12px;
+}
+.f14 textarea.ivu-input {
+	font-size: 14px;
+}
+.small-table {
+	td {
+		height: 38px;
+	}
+}
+.ivu-tooltip-inner {
+	white-space: normal;
+}
+.log-transfer-tip {
+	border-radius: 4px;
+	padding: 10px;
+	background: #E2C608;
+}
+.ivu-form-item-content {
+	word-break: break-word;
+}
+// .ivu-menu-vertical .ivu-menu-item,
+.ivu-menu-vertical .ivu-menu-submenu-title {
+	color: #333;
+}
+.ivu-menu-vertical .ivu-menu-submenu .ivu-menu-item {
+	// color: #003a8c;
+	font-size: 12px;
+    padding: 10px 24px;
+    padding-left: 48px !important;
+    padding-right: 5px;
+}
+.ivu-table td.important-column {
+	color: red;
+	background-color: #ffee00;
+}
+.main-tabs >.ivu-tabs-bar {
+	margin-bottom: 0;
+	border-bottom: none;
+}
+.ivu-tabs-tabpane {
+	> div {
+		visibility: visible !important;
+	}
+}
+.welcome {
+	margin-left: 10px;
+	border: 1px solid #ddd;
+	background: #fff;
+	padding: 15px;
+	min-height: calc(100vh - 80px);
+}
+.ivu-input-number-input::placeholder {
+  color: #ccc;
+}

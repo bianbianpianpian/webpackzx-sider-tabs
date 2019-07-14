@@ -1,0 +1,73 @@
+.main {
+	min-height: calc(100vh - 80px);
+	position: relative;
+	.v-sider {
+		// float: left;
+		position: absolute;
+		top: 0;
+		bottom: 5px;
+		// border-radius: 10px;
+		margin-left: 10px;
+		width: 200px;
+		overflow: auto;
+		border: 1px solid #ddd;
+		min-height: calc(100vh - 80px);
+		// min-height: 600px;
+		.ivu-menu {
+			min-height: 100%;
+			width: 100% !important;
+			// min-height: calc(100vh - 337px);
+			.ivu-icon {
+				width: 11px;
+			}
+		}
+		a {
+			color: #333;
+			display: block;
+			&.v-active {
+				border-right: 2px solid #2d8cf0;
+				background: #f0faff;
+				.ivu-icon-ios-circle-outline:before {
+					content: "\F400"
+				}
+			}
+		}
+		a.fold-menu {
+			color: #999;
+			font-size: 10px;
+			display: block;
+			text-align: right;
+			margin-right: 10px;
+			padding-top: 5px;
+		}
+		.ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu) {
+			.ivu-icon-ios-circle-outline:before {
+				content: "\F400"
+			}
+		}
+	}
+	.content {
+		margin-left: 205px;
+		margin-top: 10px;
+		min-height: calc(100vh - 80px);
+		div.card {
+			margin-top: 0px;
+			border-top: 1px solid #ddd;
+			min-height: calc(100vh - 90px);
+		}
+	}
+}
+.ivu-menu-submenu-title span>i, .ivu-menu-submenu-title>i {
+	margin-right: auto;
+}
+.no-header-sider.main {
+	.content {
+		margin-left: 0px;
+		margin-top: 0px;
+		div.card {
+			min-height: calc(100vh - 0px);
+			margin: 0;
+			border-radius: 0px;
+		}
+	}
+}
